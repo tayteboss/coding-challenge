@@ -4,6 +4,7 @@ import axios from "axios"
 import './app.styles.scss'
 import Header from '../header/header.component'
 import Gallery from '../gallery/gallery.component'
+import ErrorBoundary from '../error-boundary/error-boundary.component'
 
 
 export default function App() {
@@ -11,7 +12,7 @@ export default function App() {
     const [products, setProducts] = useState([])
     const [filter, setFilter] = useState('')
 
-    function handleChange(e) {
+    function handleFilterChange(e) {
         setFilter(e.target.value)
     }
 
@@ -25,7 +26,9 @@ export default function App() {
 
     return(
         <div>
-            <Header products={products} handleChange={handleChange}/>
+            <ErrorBoundary>
+                <Header products={products} handleFilterChange={handleFilterChange}/>
+            </ ErrorBoundary>
             <Gallery products={products} filter={filter}/>
         </div>
     )
