@@ -1,0 +1,30 @@
+.image-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.product-wrapper {
+    flex-grow: 1;
+    border: solid 1px lightgray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .img-temp {
+        height: 200px;
+        width: auto;
+        background-color: grey;
+    }
+
+    .details-wrapper {
+        padding: 5px;
+
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}

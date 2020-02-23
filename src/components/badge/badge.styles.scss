@@ -1,0 +1,17 @@
+.badge {
+    display: inline-block;
+
+    &--sale {
+        background-color: red;
+        color: white;
+    }
+
+    &--exclusive {
+        background-color: green;
+        color: white;
+    }
+
+    p {
+        padding: 10px 20px;
+    }
+}
