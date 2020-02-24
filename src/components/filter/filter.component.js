@@ -18,7 +18,6 @@ export default function Filter({ products, handleFilterChange }) {
         allSizeData.splice(fromIndex, 1)
         allSizeData.splice(toIndex, 0, mSize)
         return allSizeData
-
     }
 
     var sizeData = orderFilteredSizeData(filterSizesData, 4, 2)

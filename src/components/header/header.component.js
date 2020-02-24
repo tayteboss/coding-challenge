@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import './header.styles.scss'
 import Filter from '../filter/filter.component'
-import ErrorBoundary from '../error-boundary/error-boundary.component';
 
 export default function Header({ products, handleFilterChange } = props) {
 
