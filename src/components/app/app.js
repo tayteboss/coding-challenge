@@ -4,8 +4,6 @@ import axios from "axios"
 import './app.styles.scss'
 import Header from '../header/header.component'
 import Gallery from '../gallery/gallery.component'
-import ErrorBoundary from '../error-boundary/error-boundary.component'
-
 
 export default function App() {
 
@@ -26,9 +24,7 @@ export default function App() {
 
     return(
         <div>
-            <ErrorBoundary>
-                <Header products={products} handleFilterChange={handleFilterChange}/>
-            </ ErrorBoundary>
+            <Header products={products} handleFilterChange={handleFilterChange}/>
             <Gallery products={products} filter={filter}/>
         </div>
     )
