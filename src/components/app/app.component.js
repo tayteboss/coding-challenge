@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import axios from "axios"
+import axios from "axios";
 
-import './app.styles.scss'
-import Header from '../header/header.component'
-import Gallery from '../gallery/gallery.component'
+import './app.styles.scss';
+import Header from '../header/header.component';
+import Gallery from '../gallery/gallery.component';
 
 export default function App() {
 

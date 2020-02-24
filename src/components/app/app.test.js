@@ -1,19 +1,12 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React from 'react'
+import { shallow } from 'enzyme'
 
-import App from './app.component';
+import App from './app.component'
 
-function setup() {
-  const props = {
-    imgPath: 'some/image/path/to/a/mock/image',
-  };
-  const wrapper = shallow(<WelcomeMessage />);
-  return { wrapper, props };
-}
-
-describe('WelcomeMessage Test Suite', () => {
-  it('Should have an image', () => {
-    const { wrapper } = setup();
-    expect(wrapper.find('img').exists()).toBe(true);
-  });
-});
+describe('App Component', () => {
+    it('app renders', () => {
+        const wrapper = shallow(<App />)
+        const productsState = wrapper.state.products
+        expect(productsState).toEqual(0)
+    })
+})
