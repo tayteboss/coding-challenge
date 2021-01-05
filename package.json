@@ -37,7 +37,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "node-sass": "^4.13.1",
     "react-addons-test-utils": "^15.6.2",
     "sass-loader": "^8.0.2"
